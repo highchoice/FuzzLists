@@ -169,6 +169,14 @@ actuator/env
 actuator/logfile
 actuator/mappings
 actuator/trace
+actuator/auditevents
+actuator/beans
+actuator/caches
+actuator/health
+actuator/heapdump
+actuator/info
+actuator/integrationgraph
+actuator/configprops
 add_admin
 add.php
 .addressbook
