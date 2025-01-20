@@ -5415,3 +5415,6 @@ zipkin/
 zone-h.php
 .zsh_history
 .zshrc
+app_dev.php
+app_dev.php/_profiler/phpinfo
+app_dev.php/_profiler
